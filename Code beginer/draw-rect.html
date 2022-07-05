@@ -1,0 +1,20 @@
+<style>
+    canvas { border: dotted 2px silver;}
+</style>
+<script>
+    window.onload = function() {
+        var cv = document.getElementById('cv');
+        var ctx = cv.getContext('2d');
+
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'Green';
+        ctx.fillStyle = 'skyblue';
+
+        ctx.fillRect(25, 25, 100, 100);
+        ctx.clearRect(45, 45, 60, 60);
+        ctx.strokeRect(50, 50, 50, 50);
+    }
+</script>
+<body>
+    <canvas id="cv" width="150" height="150"> </canvas>
+</body>

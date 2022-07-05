@@ -1,0 +1,29 @@
+<!-- lab วาดภาพ Graphic by Canvas และ Drag Drop การจัดกลุ่ม
+
+-->
+<style>
+    canvas { border: double 4px silver;}
+</style>
+<script>
+    window.onload = function()  {
+        var cv = document.getElementById('cv');
+        var ctx = cv.getContext('2d');
+
+        ctx.lineWidth = 10;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.strokeStyle = 'blue';
+
+        ctx.beginPath();
+        ctx.lineTo(50, 150); //จุดเริ่มต้น drow graphic
+        ctx.lineTo(150,50);
+        ctx.lineTo(200, 150);
+        ctx.lineTo(250, 50);
+
+        ctx.stroke();
+        
+    }
+</script>
+<body>
+    <canvas id="cv" width="300" height="200"> </canvas>
+</body>
